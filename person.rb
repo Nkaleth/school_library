@@ -1,5 +1,5 @@
 class Person
-  def iniatialize(age, name = 'Unknown', parent_permission: true)
+  def initialize(age, name = 'Unknown', parent_permission: true)
     @id = Random.rand(1..1000)
     @name = name
     @age = age
@@ -10,7 +10,7 @@ class Person
 
   attr_reader :id
 
-  # the next line rubocop suggest "of_age?", I added a linter disable to met the requeriments
+  # the next line rubocop suggests "of_age?", I added a linter disable to met the requeriments
   def is_of_age? # rubocop:disable Naming/PredicateName
     @age >= 18
   end
