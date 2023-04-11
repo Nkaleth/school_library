@@ -22,4 +22,6 @@ class Person
       false
     end
   end
+
+  private :is_of_age?
 end
