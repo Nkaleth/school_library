@@ -47,6 +47,7 @@
 - **Add new students or teachers.**
 - **Add new books.**
 - **Save records of who borrowed a given book and when.**
+- **use the "Decorator" design pattern.**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -82,6 +83,7 @@ To run the project, execute the following command:
 
 ```sh
   irb
+  require './person.rb'
   require './student.rb'
   require './teacher.rb'
 ```
@@ -104,7 +106,6 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **use the "Decorator" design pattern.**
 - **set up associations.**
 - **add basic UI.**
 - **refactor your code.**
