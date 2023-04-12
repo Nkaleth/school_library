@@ -39,6 +39,8 @@ class Decorator < Nameable
     @nameable = nameable
   end
 
+  attr_accessor :nameable
+
   def correct_name
     @nameable.correct_name
   end
@@ -54,7 +56,7 @@ class TrimmerDecorator < Decorator
   def correct_name
     name = @nameable.correct_name
     if name.length > 10
-      name[0...10]
+      name[0...9]
     else
       name
     end
