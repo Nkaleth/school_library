@@ -49,6 +49,7 @@
 - **Save records of who borrowed a given book and when.**
 - **use the "Decorator" design pattern.**
 - **set up associations.**
+- **add basic UI.**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -111,8 +112,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **add basic UI.**
-- **refactor your code.**
+- **refactor the code.**
 - **preserve data.**
 - **unit tests.**
 
