@@ -57,7 +57,7 @@ class App
     person = @people.detect { |person| person.id == person_id }
     book = @books[book_index]
 
-    rental = Rental.new(date, book, person)
+    rental = Rental.new(person, book, date)
     @rentals << rental
     puts 'Rental created successfully'
   end
