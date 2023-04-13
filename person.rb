@@ -13,6 +13,11 @@ class Person < Nameable
     @rentals = []
   end
 
+  def add_rental(rental)
+    @rentals.push(rental)
+    rental.person = self
+  end
+
   # the next line rubocop suggests "of_age?", I added a linter disable to met the requeriments
   def is_of_age? # rubocop:disable Naming/PredicateName
     @age >= 18
