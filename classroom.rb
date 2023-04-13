@@ -7,7 +7,7 @@ class Classroom
     @students = []
   end
 
-  def add_students(student)
+  def add_student(student)
     @students.push(student)
     student.classroom = self
   end
