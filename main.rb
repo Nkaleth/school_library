@@ -53,7 +53,7 @@ def create_person(app)
   type = gets.chomp == '1' ? 'student' : 'teacher'
 
   print('Age: ')
-  age = gets.chomp.to_i
+  age = gets.chomp.to_i # to_i is to integer
 
   print('Name: ')
   name = gets.chomp
