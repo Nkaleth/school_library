@@ -73,6 +73,7 @@ Clone this repository to your desired folder:
 ```sh
   cd my-folder
   git clone git@github.com:Nkaleth/school_library.git
+  cd school_library
 ```
 
 ### Install
@@ -84,14 +85,7 @@ No need instalation.
 To run the project, execute the following command:
 
 ```sh
-  irb
-  require './person.rb'
-  require './student.rb'
-  require './teacher.rb'
-  require './rental.rb'
-  require './book.rb'
-  require './classroom.rb'
-
+  ruby main.rb
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
