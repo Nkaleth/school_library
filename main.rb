@@ -47,12 +47,14 @@ def main
       app.create_book(title, author)
     when '5'
       print('Select a book from the following list by number:')
+      puts
       app.books.each_with_index do |book, index|
         puts "#{index}) Title: #{book.title}, Author: #{book.author}"
       end
       book_index = gets.chomp.to_i
 
       print('Select a person from the following list by number (not ID):')
+      puts
       app.people.each_with_index do |person, index|
         puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
       end
