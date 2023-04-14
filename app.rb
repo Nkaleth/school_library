@@ -30,7 +30,7 @@ class App
       print('Classroom: ')
       classroom_label = gets.chomp
       classroom = Classroom.new(classroom_label)
-      person = Student.new(age, classroom, name, parent_permission: parent_permission)
+      person = Student.new(age, classroom, name, parent_permission:) # rubocop:disable Lint/Syntax
     when 'teacher'
       print('Specialization: ')
       specialization = gets.chomp

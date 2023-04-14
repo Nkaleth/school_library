@@ -22,27 +22,30 @@ def display_options
 end
 
 def handle_option(app, option)
-  case option
-  when '1'
-    app.list_all_books
-  when '2'
-    app.list_all_people
-  when '3'
-    create_person(app)
-  when '4'
-    create_book(app)
-  when '5'
-    create_rental(app)
-  when '6'
-    list_rentals_for_person_id(app)
-  when '7'
-    puts 'Thank you for using this app!'
-    exit
+  options = {
+    '1' => -> { app.list_all_books },
+    '2' => -> { app.list_all_people },
+    '3' => -> { create_person(app) },
+    '4' => -> { create_book(app) },
+    '5' => -> { create_rental(app) },
+    '6' => -> { list_rentals_for_person_id(app) },
+    '7' => lambda {
+             puts 'Thank you for using this app!'
+             exit
+           }
+  }
+
+  if options[option]
+    options[option].call
   else
-    puts 'Invalid option'
+    handle_invalid_option
   end
 
   puts
+end
+
+def handle_invalid_option
+  puts 'Invalid option'
 end
 
 def create_person(app)
