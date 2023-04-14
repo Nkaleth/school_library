@@ -54,7 +54,7 @@ class App
     puts 'Date: '
     date = gets.chomp
 
-    person = @people.detect { |person| person.id == person_id }
+    person = @people.detect { |p| p.id == person_id }
     book = @books[book_index]
 
     rental = Rental.new(person, book, date)
