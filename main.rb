@@ -53,7 +53,7 @@ def create_person(app)
   type = gets.chomp == '1' ? 'student' : 'teacher'
 
   print('Age: ')
-  age = gets.chomp.to_i
+  age = gets.chomp.to_i # to_i is to integer
 
   print('Name: ')
   name = gets.chomp
@@ -61,7 +61,7 @@ def create_person(app)
   parent_permission = true
   if type == 'student'
     print('Has parent permission? [Y/N]: ')
-    parent_permission = gets.chomp.downcase == 'y'
+    parent_permission = gets.chomp.downcase == 'y' # If the input is equal to 'y', the parent_permission variable is set to true, otherwise it remains false.
   end
 
   app.create_person(type, age, name, parent_permission)
